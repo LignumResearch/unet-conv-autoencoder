@@ -1,0 +1,9 @@
+lib/__pycache__
+old_results
+UNet_results*
+test_code
+softwoods
+softwoods_incomplete
+hardwoods
+hardwoods_hr
+autoencoder.code-workspace
