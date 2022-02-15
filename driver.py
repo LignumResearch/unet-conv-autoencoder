@@ -2,6 +2,7 @@ import argparse
 from lib import UNet, adaboost, dummy, rbf_svm, linear_svm, rf
 from time import localtime, strftime
 import os
+import subprocess
 
 
 def main():
@@ -55,6 +56,8 @@ def main():
         print("=====done=====")
         
         os.chdir('..')
+    
+    subprocess.run(['Rscript', '../metrics.py'])
 
 
 if __name__ == "__main__":
